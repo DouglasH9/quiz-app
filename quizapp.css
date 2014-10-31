@@ -52,11 +52,16 @@ table {
 }*/
 
 body {
+	background-image:('old-man.jpg');
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: left center;
+	font-family: Arial, sans-serif;
 	background-image: url("standUpPic.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
-	font-family: Arial, sans-serif;
+	
 }
 p {
 	opacity: 1.0;
@@ -118,6 +123,19 @@ h1 {
 	background-color: #C1444A;
 	opacity:.85;
 }
+li {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}
+li:hover{
+	background-color:#57B8C7;
+	opacity: .85;
+	border-radius: 20px;
+	font-weight:bold;
+
+}
 #question {
 	position:relative;
 	display:block;
@@ -161,6 +179,10 @@ h1 {
 	vertical-align: middle;
 }
 .chosen{
+	-webkit-transition: all 0.0s ease-in-out;
+	-moz-transition:all 0.0s ease-in-out;
+	-o-transition:all 0.0 ease-in-out;
+	transition:all 0.0 ease-in-out;
 	font-size:32px;
 	display: block;
 	text-align: center;
