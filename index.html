@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="quizapp.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="jquery.js"></script>
-	<script src="app.js"></script>
+	
 </head>
 <body>
 	<div id="instructionBox">
@@ -20,14 +20,15 @@
 	<div id="qBox">
 		<h3 id="question"></h3>
 		<ul id="ansList">
-			<li id="ansOne"></li>
-			<li id="ansTwo"></li>
-			<li id="ansThree"></li>
-			<li id="ansFour"></li>
+			<li class='choice' id="ansOne"></li>
+			<li class='choice' id="ansTwo"></li>
+			<li class='choice' id="ansThree"></li>
+			<li class='choice' id="ansFour"></li>
 		</ul>
 		<div id="subBut">
 			<p>Submit</p>
 		</div>
 	</div>
+	<script src="app.js"></script>
 </body>
 </html>

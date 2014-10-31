@@ -47,9 +47,9 @@ table {
 }
 /* end of reset*/
 
-* {
+/* {
 	outline:2px solid black;
-}
+}*/
 
 body {
 	background-image: url("standUpPic.png");
@@ -131,13 +131,14 @@ h1 {
 #ansList {
 	margin-top:95px;
 }
-#ansList li {
+.choice {
 	display: block;
 	text-align: center;
 	margin:20px;
 	font-size:28px;
 	margin:40px;
 	opacity:1.0;
+	cursor:pointer;
 }
 #subBut {
 	box-shadow: 3px 3px;
@@ -158,4 +159,13 @@ h1 {
 #subBut p{
 	display:block;
 	vertical-align: middle;
+}
+.chosen{
+	font-size:32px;
+	display: block;
+	text-align: center;
+	margin:20px;
+	margin:40px;
+	opacity:1.0;
+	cursor:pointer;
 }
