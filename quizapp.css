@@ -52,19 +52,16 @@ table {
 }*/
 
 body {
-	background-image:('old-man.jpg');
-	background-repeat: no-repeat;
-	background-size: 50%;
-	background-position: left center;
-	font-family: Arial, sans-serif;
-	background-image: url("standUpPic.png");
+	
+	background-image: url("statler&waldorf.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
+	font-family:Arial, sans-serif;
 	
 }
 p {
-	opacity: 1.0;
+	color:rgba(0,0,0, 1.0);
 }
 #instructionBox {
 	position:relative;
@@ -73,7 +70,7 @@ p {
 	margin:2.5% auto;
 	background-color: #328695;
 	border-radius:25px;
-	box-shadow: 4px 4px black;
+	box-shadow: 4px 4px 4px black;
 	font-weight: bold;	
 	padding:0px 20px 0px 20px;	
 	font-size: 30px;
@@ -97,7 +94,11 @@ h1 {
 	line-height: 40px;
 }
 #startButton {
-	box-shadow: 3px 3px;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;
+	-o-transition:all 0.3s ease-in;
+	transition:all 0.3s ease-in;
+	box-shadow: 3px 3px 5px;
 	border-radius: 3px;
 	margin:auto;
 	padding:none;
@@ -108,32 +109,34 @@ h1 {
 	opacity: 1.0;
 	background-color:gray;
 	cursor:pointer;
+	opacity:1;
 }
 #startButton p{
+	color:rgba(0,0,0,1.0);
 	font-weight: normal;
 	padding:0px;
+}
+#startButton:hover{
+	background-color: #C68853;
 }
 #qBox{
 	display:none;
 	border-radius: 25px;
-	box-shadow: 4px 4px black;
+	box-shadow: 4px 4px 4px black;
 	margin:3.3% auto;
-	height:800px;
+	min-height:800px;
 	width:700px;
-	background-color: #C1444A;
-	opacity:.85;
+	background-color: white;
+	opacity:.87;
 }
-li {
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-o-transition:all 0.3s ease-in-out;
-	transition:all 0.3s ease-in-out;
-}
+
 li:hover{
+	font-size:32px;
 	background-color:#57B8C7;
 	opacity: .85;
 	border-radius: 20px;
 	font-weight:bold;
+	box-shadow: 3px 3px 5px;
 
 }
 #question {
@@ -150,6 +153,10 @@ li:hover{
 	margin-top:95px;
 }
 .choice {
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition:all 0.1s ease-in;
+	-o-transition:all 0.1s ease-in;
+	transition:all 0.1s ease-in;
 	display: block;
 	text-align: center;
 	margin:20px;
@@ -159,7 +166,11 @@ li:hover{
 	cursor:pointer;
 }
 #subBut {
-	box-shadow: 3px 3px;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;
+	-o-transition:all 0.3s ease-in;
+	transition:all 0.3s ease-in;
+	box-shadow: 3px 3px 5px;
 	border-radius: 5px;
 	margin:auto;
 	padding:none;
@@ -168,26 +179,79 @@ li:hover{
 	height:60px;
 	width:75px;
 	opacity: 1.0;
-	background-color:#B7E0A3;
+	background-color:rgba(183,224,163,1.0);
 	cursor:pointer;
 	font-size: 20px;
 	font-weight:bold;
 	text-align: center;
+	vertical-align: middle;
 }
 #subBut p{
 	display:block;
-	vertical-align: middle;
+	padding-top: 16px;
+	opacity:1.0;
+	
+}
+#subBut:hover{
+	background-color: #C95E6E;
 }
 .chosen{
-	-webkit-transition: all 0.0s ease-in-out;
-	-moz-transition:all 0.0s ease-in-out;
-	-o-transition:all 0.0 ease-in-out;
-	transition:all 0.0 ease-in-out;
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition:all 0.1s ease-in;
+	-o-transition:all 0.1s ease-in;
+	transition:all 0.1s ease-in;
+	color:#7A2A37;
 	font-size:32px;
+	font-weight:bold;
 	display: block;
 	text-align: center;
 	margin:20px;
 	margin:40px;
 	opacity:1.0;
 	cursor:pointer;
+}
+#resultBox {
+	display:none;
+	position:relative;
+	height:900px;
+	width:1200px;
+	margin:2.5% auto;
+	background-color: #328695;
+	border-radius:25px;
+	box-shadow: 4px 4px black;
+	font-weight: bold;	
+	padding:0px 20px 0px 20px;	
+	font-size: 30px;
+	color:black;
+	text-align: center;
+	opacity: .9;
+}
+#rankDisplay{
+	position: relative;
+	font-family: Impact, Arial, sans-serif;
+	font-weight: bolder;
+	font-style: italic;
+	padding-top: 105px;
+	font-size: 45px;
+}
+#banter{
+	position: relative;
+	margin-top:120px;
+	font-size: 40px;
+	height: 210px;
+	line-height: 40px;
+}
+#newGame {
+	box-shadow: 3px 3px;
+	border-radius: 3px;
+	margin:auto;
+	padding:none;
+	position:relative;
+	margin-top:90px;
+	height:60px;
+	width:75px;
+	opacity: 1.0;
+	background-color:gray;
+	cursor:pointer;
+	
 }
