@@ -242,10 +242,16 @@ li:hover{
 	line-height: 40px;
 }
 #newGame {
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;
+	-o-transition:all 0.3s ease-in;
+	transition:all 0.3s ease-in;
 	box-shadow: 3px 3px;
 	border-radius: 3px;
 	margin:auto;
 	padding:none;
+	font-size: 25px;
+	text-align: middle;
 	position:relative;
 	margin-top:90px;
 	height:60px;
